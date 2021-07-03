@@ -11,7 +11,7 @@ export const getTask = async (): Promise<TaskResponse> => {
     return response.data;
 };
 
-export const updateTask = async (title: string, note: string): Promise<number> => {
+export const updateTask = async (id: number, title: string, note: string): Promise<number> => {
     const response = await axios.put("/api/tasks", { title, note });
     return response.status;
 };
