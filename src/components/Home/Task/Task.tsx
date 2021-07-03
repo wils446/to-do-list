@@ -30,7 +30,7 @@ export default class Task extends React.Component<TaskProps, TaskState> {
                 <div className="box mt-3 mb-3 px-3 py-2">
                     <h3 className="title d-inline">{this.props.data.title}</h3>
                     <h6 className="d-inline mx-2">{this.state.date}</h6>
-                    <h6 className="mt-2">note : {this.props.data.note}</h6>
+                    {this.props.data.note ? <h6 className="mt-2">note : {this.props.data.note}</h6> : <></>}
                 </div>
             </div>
         );
