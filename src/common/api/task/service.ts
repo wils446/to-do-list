@@ -15,3 +15,8 @@ export const updateTask = async (title: string, note: string): Promise<number> =
     const response = await axios.put("/api/tasks", { title, note });
     return response.status;
 };
+
+export const deleteTask = async (id: number): Promise<number> => {
+    const response = await axios.delete("/api/tasks");
+    return response.status;
+};
