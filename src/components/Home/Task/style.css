@@ -3,3 +3,7 @@
     background-color: rgb(237, 237, 237);
     border-radius: 0.5rem;
 }
+
+i {
+    cursor: pointer;
+}
