@@ -1,7 +1,7 @@
 import axios from "../axios";
 import type { TaskResponse } from "./interfaces";
 
-export const createTask = async (title: string, note: string): Promise<number> => {
+export const createTask = async (title: string, note?: string): Promise<number> => {
     const response = await axios.post("/api/tasks", { title, note });
     return response.status;
 };
