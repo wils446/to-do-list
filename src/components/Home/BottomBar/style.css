@@ -1,0 +1,52 @@
+.bottom-bar {
+    background-color: rgb(206, 206, 206);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.button {
+    cursor: pointer;
+    height: 100%;
+    background-color: rgb(206, 206, 206);
+}
+
+.button :hover {
+    background-color: rgb(175, 175, 175);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contoh {
+        height: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .bottom-bar {
+        height: 40px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .bottom-bar {
+        height: 40px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .bottom-bar {
+        height: 40px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .bottom-bar {
+        height: 45px;
+    }
+}
